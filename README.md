@@ -10,17 +10,31 @@ This project focuses on data ingestion, validation, and analysis of mutual fund 
 MutualFundAnalytics/
 │
 ├── data/
-│   ├── raw_data/
-│   └── processed/
+│   │
+│   ├── raw/
+│   │   ├── nav_history.csv
+│   │   ├── investor_transactions.csv
+│   │   └── scheme_performance.csv
+│   │
+│   └── processed_data/
+│       ├── nav_history_clean.csv
+│       ├── investor_transactions_clean.csv
+│       └── scheme_performance_clean.csv
 │
-├── notebooks/
-├── sql/
-├── dashboard/
-├── reports/
+├── scripts/
+│   └── load_sqlite.ipynb
 │
-├── data_ingestion.py
-├── live_nav_fetch.py
+├── sql
+│	├── schema.sql
+│	├── queries.sql
+│
+├── bluestock_mf.db
+│
+│
+├── data_ingestion.ipynb
+├── live_nav_fetch.ipynb
 ├── requirements.txt
+│
 └── README.md
 ```
 
